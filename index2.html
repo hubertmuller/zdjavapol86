@@ -3,17 +3,43 @@
     <head>
         <meta charset="UTF-8">
         <title>Nasz dokument</title>
+        <link rel="stylesheet" href="style.css">
         <style>
-            p[class="pierwszyparagraf"]
+            /*li[class="mojeslowo"]*/
+            li.mojeslowo, h1
             {
                 background-color: red;
                 font-size: 14pt;
             }
 
-            h1
-            {
-                color: blue;
+            .mojeslowo {
+
             }
+
+            #witaj {
+
+            }
+
+            [type="text"] {
+
+            }
+
+            /*h1[id="witaj"]*/
+            h1#witaj {
+                color: red;
+                background-color: initial;
+            }
+
+
+            table tbody > tr td
+            {
+                /*background-color: green;*/
+            }
+
+            tr + tr {
+                background-color: yellow;
+            }
+
 
         </style>
     </head>
@@ -34,7 +60,7 @@
         </p>
 
         <ul>
-            <li>wyspany</li>
+            <li class="mojeslowo">wyspany</li>
             <li>zdrowy</li>
         </ul>
 
@@ -52,15 +78,15 @@
         <table border="1" width="100%">
             <caption>Lista dostępnych szczepionek</caption>
             <tbody>
-            <tr>
-                <th>nazwa</th><th>kraj</th>
-            </tr>
-            <tr>
-                <td>Pfizer</td><td rowspan="2">USA</td>
-            </tr>
-            <tr>
-                <td>Novavax</td>
-            </tr>
+                <tr>
+                    <th>nazwa</th><th>kraj</th>
+                </tr>
+                <tr>
+                    <td>Pfizer</td><td rowspan="2">USA</td>
+                </tr>
+                <tr>
+                    <td>Novavax</td>
+                </tr>
             </tbody>
         </table>
 
