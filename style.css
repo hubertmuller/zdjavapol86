@@ -6,6 +6,41 @@
     font-weight: 300;
 }
 
+body {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 20px;
+    background-image: url(img/covid.jpg);
+    background-size: 100%;
+    color: white;
+}
+
+input[type="text"], input[type="submit"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 5px 0 10px 0;
+}
+
+input[type="submit"]:hover {
+    background-color: #88ff88;
+}
+
+input[type="text"]:hover {
+    background-color: #eee;
+    border: 1px solid #ff8888;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: 1rem;
+    height: 1rem;
+}
+
 table {
     border-collapse: collapse;
     border: 1px solid #aaa;
