@@ -1,1 +1,6 @@
+@import url('fonts/fonts.css');
 
+* {
+    font-family: 'Georama', Arial, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
