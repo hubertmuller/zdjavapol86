@@ -3,4 +3,46 @@
 * {
     font-family: 'Georama', Arial, 'Times New Roman', Times, serif;
     box-sizing: border-box;
+    font-weight: 300;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #aaa;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+legend {
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.noerror {
+    display: none;
+}
+
+.error {
+    display: block;
+    color: #f00;
+}
+
+caption {
+    background-color: #cccccc;
+    border: 1px solid #aaaaaa;
+    border-bottom-width: 0;
+    font-weight: 400;
+}
+
+td, th, caption {
+    padding: 10px;
+}
+
+th {
+    background-color: #dddddd;
+    text-align: left;
 }
