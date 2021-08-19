@@ -9,6 +9,15 @@
 body {
     margin-top: 0;
     margin-bottom: 0;
+    font-size: 15px;
+}
+
+.duze {
+    font-size: 30px;
+}
+
+.lupa {
+    cursor: pointer;
 }
 
 h1 {
