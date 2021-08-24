@@ -66,10 +66,16 @@
             <div>
                 <label for="imieid">Imie</label>
                 <input type="text" size="30" value="" placeholder="np. Adam" name="imie" id="imieid" maxlength="40" accesskey="i" tabindex="1">
+                <div id="imieError" class="red noerror">
+                    Musisz wpisac imie
+                </div>
             </div>
             <div>
                 <label for="nazwiskoid">Nazwisko</label>
                 <input type="text" size="50" value="" placeholder="np. Kowalski" name="nazwisko" id="nazwiskoid" maxlength="50" accesskey="n" tabindex="2">
+                <div id="nazwiskoError" class="red noerror">
+                    Musisz wpisac nazwisko
+                </div>
             </div>
             <div>
                 <fieldset>
@@ -109,6 +115,9 @@
             <div>
                 <label for="komentarzid">Komentarz</label><br>
                 <textarea rows="10" cols="40" id="komentarzid" name="komentarze"></textarea>
+                <div id="komentarzeError" class="red noerror">
+                    Musisz wpisac komentarz
+                </div>
             </div>
             <div>
                 <input type="submit" value="Zapisz">

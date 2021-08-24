@@ -70,6 +70,13 @@ legend {
     display: none;
 }
 
+.red {
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
 .error {
     display: block;
     color: #f00;
