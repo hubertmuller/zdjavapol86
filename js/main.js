@@ -24,15 +24,18 @@ function sprawdz(target) {
     var tablicaElementow = [
         {
             wartoscSpr: forma.imie.value,
-            poleBlad: imieError
+            poleBlad: imieError,
+            wyrazenie: /^([A-z]{3,})$/g,
         },
         {
             wartoscSpr: forma.nazwisko.value,
-            poleBlad: nazwiskoError
+            poleBlad: nazwiskoError,
+            wyrazenie: /^([A-z\-]{3,})$/g,
         },
         {
             wartoscSpr: forma.komentarze.value,
-            poleBlad: komentarzeError
+            poleBlad: komentarzeError,
+            wyrazenie: /^([A-z ]{3,})$/g,
         }
     ];
 
@@ -44,7 +47,8 @@ function sprawdz(target) {
     for(let x = 0; x < tablicaElementow.length ; x++) {
 
         let sparawdzanyElement = tablicaElementow[x];
-        if (sparawdzanyElement.wartoscSpr.length === 0) {
+
+        if (!sparawdzanyElement.wartoscSpr.match(sparawdzanyElement.wyrazenie)) {
             ustawBlad(true, sparawdzanyElement.poleBlad);
             blad = true;
         } else {
@@ -55,6 +59,19 @@ function sprawdz(target) {
     if (blad === true) {
         target.preventDefault();
     }
+
+    //funkcja strzalkowa
+    var elementyP = document.querySelectorAll("p");
+    elementyP.forEach(
+        (element) => {
+            element.style.color = "#ff0000";
+        });
+
+    elementyP.forEach(
+        function (element) {
+            element.style.color =  "#ff0000";
+        }
+    )
 
 
 }
